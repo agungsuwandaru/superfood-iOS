@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="SuperFoodTableViewCell" customModule="Super_Food" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A9q-Rg-dyk" userLabel="PhotoSuperFood">
+                        <rect key="frame" x="16" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="8QB-5Y-djV"/>
+                            <constraint firstAttribute="width" constant="80" id="gH2-M4-aPf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u78-Jk-L3r" userLabel="NameSuperFood">
+                        <rect key="frame" x="104" y="16" width="294" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML2-mK-i45" userLabel="DescSuperFood">
+                        <rect key="frame" x="104" y="48" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u78-Jk-L3r" firstAttribute="leading" secondItem="A9q-Rg-dyk" secondAttribute="trailing" constant="8" id="7qL-os-n1f"/>
+                    <constraint firstItem="A9q-Rg-dyk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="DQT-8n-Ubw"/>
+                    <constraint firstAttribute="trailing" secondItem="u78-Jk-L3r" secondAttribute="trailing" constant="16" id="PFQ-ra-qgi"/>
+                    <constraint firstItem="ML2-mK-i45" firstAttribute="leading" secondItem="A9q-Rg-dyk" secondAttribute="trailing" constant="8" id="ROg-8k-ZLV"/>
+                    <constraint firstItem="u78-Jk-L3r" firstAttribute="leading" secondItem="A9q-Rg-dyk" secondAttribute="trailing" constant="8" id="VPZ-eu-QTt"/>
+                    <constraint firstAttribute="bottom" secondItem="A9q-Rg-dyk" secondAttribute="bottom" constant="16" id="Vhw-dv-GFA"/>
+                    <constraint firstItem="ML2-mK-i45" firstAttribute="top" secondItem="u78-Jk-L3r" secondAttribute="bottom" constant="8" id="WEz-I6-g7v"/>
+                    <constraint firstItem="u78-Jk-L3r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Wsu-Fm-wf9"/>
+                    <constraint firstAttribute="trailing" secondItem="ML2-mK-i45" secondAttribute="trailing" constant="16" id="h0u-dw-fDj"/>
+                    <constraint firstItem="A9q-Rg-dyk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="p3U-um-SZF"/>
+                    <constraint firstItem="ML2-mK-i45" firstAttribute="top" secondItem="u78-Jk-L3r" secondAttribute="bottom" constant="8" id="vTc-HN-taJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="SuperFoodCell"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descSuperFood" destination="ML2-mK-i45" id="sew-ca-XNf"/>
+                <outlet property="nameSuperFood" destination="u78-Jk-L3r" id="77f-iF-aXB"/>
+                <outlet property="photoSuperFood" destination="A9q-Rg-dyk" id="RHx-TM-NcT"/>
+            </connections>
+            <point key="canvasLocation" x="450.72463768115944" y="150.66964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
